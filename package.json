@@ -1,0 +1,38 @@
+{
+  "name": "@kinde/webhooks",
+  "private": false,
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "0.1.0-3",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --write ."
+  },
+  "module": "dist/webhooks.js",
+  "main": "dist/webhooks.cjs",
+  "types": "dist/main.d.ts",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@vitest/coverage-v8": "^1.5.2",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vite-plugin-dts": "^3.9.0",
+    "vitest": "^1.5.2"
+  },
+  "dependencies": {
+    "@kinde/jwt-decoder": "^0.1.0",
+    "@kinde/jwt-validator": "0.1.0-1"
+  },
+  "packageManager": "pnpm@8.14.1+sha256.2df78e65d433d7693b9d3fbdaf431b2d96bb4f96a2ffecd51a50efe16e50a6a8"
+}

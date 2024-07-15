@@ -8,11 +8,11 @@ Decode and validate Kinde Webhook tokens
 
 ```bash
 # npm
-npm install @kinde/webhook
+npm install @kinde/webhooks
 # yarn
-yarn add @kinde/webhook
+yarn add @kinde/webhooks
 # pnpm
-pnpm add @kinde/webhook
+pnpm add @kinde/webhooks
 ```
 
 ## Usage

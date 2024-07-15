@@ -18,7 +18,7 @@ pnpm add @kinde/webhooks
 ## Usage
 
 ```js
-import { decodeWebhook } from "@kinde/webhook";
+import { decodeWebhook } from "@kinde/webhooks";
 
 // Not sure of the type at decode point
 const decodedWebhook = decodeWebhook("eyJhbGc...");

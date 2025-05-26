@@ -51,7 +51,7 @@ type UserEvent = {
   is_suspended: boolean;
   last_name: string;
   organizations: Array<{
-    roles: string[] | null;
+    roles: { id: string; key: string }[] | null;
     code: string;
     permissions: Array<{
       id: string;

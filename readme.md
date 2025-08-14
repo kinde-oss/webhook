@@ -21,13 +21,13 @@ pnpm add @kinde/webhooks
 import { decodeWebhook } from "@kinde/webhooks";
 
 // Not sure of the type at decode point
-const decodedWebhook = decodeWebhook("eyJhbGc...");
-if (decodedWebhook.type === WebhookEventType.userCreated) {
+const decodedWebhook = await decodeWebhook("eyJhbGc...", "https://your-subdomain.kinde.com");
+if (decodedWebhook?.type === WebhookEventType.userCreated) {
   // decodedWebhook is type safe userCreated event
 }
 
 // Know the event type at decode point
-const decodedWebhook = decodeWebhook < UserCreatedWebhookEvent > "eyJhbGc...";
+const decodedWebhook = await decodeWebhook<UserCreatedWebhookEvent>("eyJhbGc...", "https://your-subdomain.kinde.com");
 // decodedWebhook is type safe userCreated event
 ```
 

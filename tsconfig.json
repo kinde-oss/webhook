@@ -19,5 +19,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["lib"]
+  "include": ["lib"],
+  "exclude": ["lib/**/*.test.ts", "lib/**/*.spec.ts", "node_modules", "dist"]
 }

@@ -1,6 +1,23 @@
 # Changelog
 
 
+## 1.1.0...main
+
+[compare changes](https://github.com/kinde-oss/webhook/compare/1.1.0...main)
+
+### 🚀 Enhancements
+
+- Add ip_address to user authenticated and user authentication failed payloads ([353da29](https://github.com/kinde-oss/webhook/commit/353da29))
+
+### 🏡 Chore
+
+- Update CODEOWNERS for dependency files ([83cf85c](https://github.com/kinde-oss/webhook/commit/83cf85c))
+
+### ❤️ Contributors
+
+- Daniel Rivers <daniel@kinde.com>
+- Andre Selton <andre@kinde.com>
+
 ## ...main
 
 

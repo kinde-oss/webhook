@@ -91,6 +91,7 @@ export type UserAuthenticatedWebhookEvent = WebhookBase & {
       id: string;
     };
   };
+  ip_address: string;
   type: WebhookEventType.userAuthenticated;
 };
 
@@ -100,6 +101,7 @@ export type UserAuthenticationFailedWebhookEvent = WebhookBase & {
       id: string;
     };
   };
+  ip_address: string;
   type: WebhookEventType.userAuthenticationFailed;
 };
 

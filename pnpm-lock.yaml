@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@kinde/jwt-decoder':
-    specifier: ^0.1.0
-    version: 0.1.0
+    specifier: ^0.2.0
+    version: 0.2.1
   '@kinde/jwt-validator':
     specifier: 0.1.0-1
     version: 0.1.0-1
@@ -325,8 +325,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@kinde/jwt-decoder@0.1.0:
-    resolution: {integrity: sha512-DXx0GeF5I8ZKEKd69lHwuzorSiVlAANHgoGmlO+t32aF+5BjGYdoZz3TpYPsG2Os6A1wugMobgvNmBN2/1ipeA==}
+  /@kinde/jwt-decoder@0.2.1:
+    resolution: {integrity: sha512-V6JIC7SzQjxpxcgXrrs5AzJQrLoLgsTvnLVirHDhmSE//LIFz7nxM5Z19Hgm56wKm3L3yDM8QZW/oluflLCrxQ==}
     dev: false
 
   /@kinde/jwt-validator@0.1.0-1:

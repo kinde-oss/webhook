@@ -24,13 +24,13 @@ devDependencies:
     version: 3.8.3
   typescript:
     specifier: ^5.4.5
-    version: 5.4.5
+    version: 5.9.3
   vite:
     specifier: ^6.0.0
     version: 6.4.2(@types/node@24.12.4)
   vite-plugin-dts:
     specifier: ^5.0.0
-    version: 5.0.1(typescript@5.4.5)(vite@6.4.2)
+    version: 5.0.1(typescript@5.9.3)(vite@6.4.2)
   vitest:
     specifier: ^4.0.0
     version: 4.1.7(@types/node@24.12.4)(@vitest/coverage-v8@4.1.7)(vite@6.4.2)
@@ -1074,8 +1074,8 @@ packages:
     engines: {node: '>=14.0.0'}
     dev: true
 
-  /typescript@5.4.5:
-    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
+  /typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
@@ -1088,7 +1088,7 @@ packages:
     resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
     dev: true
 
-  /unplugin-dts@1.0.1(typescript@5.4.5)(vite@6.4.2):
+  /unplugin-dts@1.0.1(typescript@5.9.3)(vite@6.4.2):
     resolution: {integrity: sha512-EdJZxdWP4Tm/xhe58/zAge3Tu0OKDYygm8rucRrcCZ4XzgA31jexUKhaJuEMddOPBDs9ONnq6vwigbjeBqkfuw==}
     peerDependencies:
       '@microsoft/api-extractor': '>=7'
@@ -1125,7 +1125,7 @@ packages:
       kolorist: 1.8.0
       local-pkg: 1.2.1
       magic-string: 0.30.21
-      typescript: 5.4.5
+      typescript: 5.9.3
       unplugin: 2.3.11
       vite: 6.4.2(@types/node@24.12.4)
     transitivePeerDependencies:
@@ -1142,7 +1142,7 @@ packages:
       webpack-virtual-modules: 0.6.2
     dev: true
 
-  /vite-plugin-dts@5.0.1(typescript@5.4.5)(vite@6.4.2):
+  /vite-plugin-dts@5.0.1(typescript@5.9.3)(vite@6.4.2):
     resolution: {integrity: sha512-1L+x8bVPDhlI4kLzRIIGqO+b1VnvtY6CoHrU+riaipHJUAxayM0i1HObqeBv33Svil9hW64Z2KNiOn6UrKWCbA==}
     peerDependencies:
       '@microsoft/api-extractor': '>=7'
@@ -1156,7 +1156,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      unplugin-dts: 1.0.1(typescript@5.4.5)(vite@6.4.2)
+      unplugin-dts: 1.0.1(typescript@5.9.3)(vite@6.4.2)
       vite: 6.4.2(@types/node@24.12.4)
     transitivePeerDependencies:
       - '@rspack/core'

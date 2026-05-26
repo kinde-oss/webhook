@@ -27,7 +27,7 @@
     "prettier": "^3.2.5",
     "typescript": "^5.4.5",
     "vite": "^6.0.0",
-    "vite-plugin-dts": "^3.9.0",
+    "vite-plugin-dts": "^5.0.0",
     "vitest": "^1.5.2"
   },
   "dependencies": {

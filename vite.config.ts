@@ -11,7 +11,7 @@ export default defineConfig({
       name: "@kinde/webhooks",
       fileName: "webhooks",
     },
-    target: "modules",
+    target: "es2015",
     outDir: "../dist",
     emptyOutDir: true,
   },

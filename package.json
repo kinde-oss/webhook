@@ -22,7 +22,7 @@
   "main": "dist/webhooks.cjs",
   "types": "dist/main.d.ts",
   "devDependencies": {
-    "@types/node": "^20.12.7",
+    "@types/node": "^24.0.0",
     "@vitest/coverage-v8": "^1.5.2",
     "prettier": "^3.2.5",
     "typescript": "^5.4.5",

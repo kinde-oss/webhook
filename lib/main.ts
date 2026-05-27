@@ -33,7 +33,13 @@ export const decodeWebhook = async <T = WebhookEvent>(
   token?: string,
   domain?: string,
 ): Promise<T | null> => {
-  const tokenValid = await validateToken({ token, domain });
+  let tokenValid;
+  try {
+    tokenValid = await validateToken({ token, domain });
+  } catch {
+    return null;
+  }
+
   if (!tokenValid.valid) {
     return null;
   }

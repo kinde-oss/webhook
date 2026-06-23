@@ -12,11 +12,15 @@ export default defineConfig({
       fileName: "webhooks",
     },
     target: "es2015",
-    outDir: "../dist",
+    outDir: "dist",
     emptyOutDir: true,
   },
-  root: "lib",
   base: "",
-  resolve: { alias: { src: resolve(__dirname, "./lib") } },
-  plugins: [dts({ insertTypesEntry: true, outDir: "../dist" })],
+  plugins: [
+    dts({
+      insertTypesEntry: true,
+      include: ["lib"],
+      exclude: ["lib/**/*.test.ts", "lib/**/*.spec.ts"],
+    }),
+  ],
 });

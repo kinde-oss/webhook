@@ -15,6 +15,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest --coverage",
+    "test:dist": "pnpm build && vitest run --config vitest.dist.config.ts",
     "lint": "prettier --check .",
     "lint:fix": "prettier --write ."
   },

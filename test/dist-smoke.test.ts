@@ -17,11 +17,16 @@ import { execFileSync } from "node:child_process";
 import { existsSync, mkdtempSync, writeFileSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(here, "..");
 const distDir = join(repoRoot, "dist");
+
+// Dynamic import() needs a file:// URL, not a bare filesystem path: on Windows a
+// drive-letter path (C:\...) is read as a URL scheme and throws
+// ERR_UNSUPPORTED_ESM_URL_SCHEME. pathToFileURL is a no-op-shaped fix on POSIX.
+const importPath = (rel: string) => pathToFileURL(join(repoRoot, rel)).href;
 
 // Read package.json so the test follows whatever entry points the package
 // advertises, rather than hard-coding filenames.
@@ -49,14 +54,14 @@ describe("dist runtime (built bundle)", () => {
   });
 
   it("imports the built ESM bundle and exposes the runtime surface", async () => {
-    const mod = await import(join(repoRoot, pkg.module));
+    const mod = await import(importPath(pkg.module));
     expect(typeof mod.decodeWebhook).toBe("function");
     expect(typeof mod.WebhookEventType).toBe("object");
     expect(mod.WebhookEventType.userCreated).toBe("user.created");
   });
 
   it("decodeWebhook from the bundle resolves null for an empty token", async () => {
-    const mod = await import(join(repoRoot, pkg.module));
+    const mod = await import(importPath(pkg.module));
     await expect(mod.decodeWebhook("")).resolves.toBeNull();
   });
 });
@@ -106,9 +111,13 @@ describe("dist declarations (#39)", () => {
         }),
       );
 
-      const tscBin = join(repoRoot, "node_modules", ".bin", "tsc");
+      // Invoke tsc via Node against its JS entry point, NOT the
+      // node_modules/.bin/tsc shim: on Windows that shim is a `.cmd` wrapper
+      // that execFileSync (no shell) cannot resolve. The TS package's "bin"
+      // entry is the portable, OS-neutral target.
+      const tscJs = join(repoRoot, "node_modules", "typescript", "bin", "tsc");
       // Throws (non-zero exit) if the import fails to resolve / type-check.
-      execFileSync(tscBin, ["-p", join(work, "tsconfig.json")], {
+      execFileSync("node", [tscJs, "-p", join(work, "tsconfig.json")], {
         stdio: "pipe",
       });
     } finally {

@@ -12,8 +12,8 @@ importers:
         specifier: ^0.2.0
         version: 0.2.1
       '@kinde/jwt-validator':
-        specifier: 0.4.1
-        version: 0.4.1
+        specifier: 0.4.3
+        version: 0.4.3
     devDependencies:
       '@types/node':
         specifier: ^24.0.0
@@ -88,8 +88,8 @@ packages:
   '@kinde/jwt-decoder@0.2.1':
     resolution: {integrity: sha512-V6JIC7SzQjxpxcgXrrs5AzJQrLoLgsTvnLVirHDhmSE//LIFz7nxM5Z19Hgm56wKm3L3yDM8QZW/oluflLCrxQ==}
 
-  '@kinde/jwt-validator@0.4.1':
-    resolution: {integrity: sha512-q6Pt9UnebdcQb6pL2LpEBfkvG0SBcrA602Y5mz4XGK2BWP3bBv918FgF9Dkmm6DXRG649IwiTVBhdpoM+rbNOA==}
+  '@kinde/jwt-validator@0.4.3':
+    resolution: {integrity: sha512-bszufsi1e1TzMUYJb4AKj3B4iod5z3oHioTgdo0Qm9TApGwmSTnG72nVeq4tF5Qp8pfGRea2O/cRuoburqMyiw==}
 
   '@napi-rs/wasm-runtime@1.1.6':
     resolution: {integrity: sha512-ZLv/JdUfkvOy9eCnnBaGfiO+XimbjebAeO+MRQqD/B+FR1tnRN0tpKSJHRbE8sFfS6aqsXZ67TQjfwfsxULVbg==}
@@ -758,7 +758,7 @@ snapshots:
 
   '@kinde/jwt-decoder@0.2.1': {}
 
-  '@kinde/jwt-validator@0.4.1':
+  '@kinde/jwt-validator@0.4.3':
     dependencies:
       '@kinde/jwt-decoder': 0.2.1
       jsrsasign: 11.1.3

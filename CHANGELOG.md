@@ -1,6 +1,40 @@
 # Changelog
 
 
+## 1.3.1
+
+[compare changes](https://github.com/kinde-oss/webhook/compare/1.3.0...1.3.1)
+
+### 🩹 Fixes
+
+- **build:** Ship type declarations in the published package ([3c9d36f](https://github.com/kinde-oss/webhook/commit/3c9d36f))
+
+### 🏡 Chore
+
+- **deps:** Update pnpm to v11.9.0 ([15db0c8](https://github.com/kinde-oss/webhook/commit/15db0c8))
+- **deps:** Update dependency vite to v8.1.0 ([ff59ebb](https://github.com/kinde-oss/webhook/commit/ff59ebb))
+- **deps:** Update dependency vite-plugin-dts to v5.0.3 ([baa5818](https://github.com/kinde-oss/webhook/commit/baa5818))
+- **deps:** Update vitest monorepo to v4.1.9 ([5e210f6](https://github.com/kinde-oss/webhook/commit/5e210f6))
+- **deps:** Update dependency @types/node to v24.13.2 ([4b2179a](https://github.com/kinde-oss/webhook/commit/4b2179a))
+- **deps:** Update codecov/codecov-action action to v7 ([ceedd45](https://github.com/kinde-oss/webhook/commit/ceedd45))
+- **deps:** Update actions/cache action to v6 ([8ab63c3](https://github.com/kinde-oss/webhook/commit/8ab63c3))
+- **deps:** Update actions/checkout action to v7 ([a58c7c5](https://github.com/kinde-oss/webhook/commit/a58c7c5))
+
+### ✅ Tests
+
+- **dist:** Add smoke tests for the published package artefacts ([51690d5](https://github.com/kinde-oss/webhook/commit/51690d5))
+- **dist:** Make the dist smoke suite Windows-portable ([4c83f3f](https://github.com/kinde-oss/webhook/commit/4c83f3f))
+
+### 🤖 CI
+
+- Run the dist smoke suite to guard declaration packaging ([0537a9e](https://github.com/kinde-oss/webhook/commit/0537a9e))
+
+### ❤️ Contributors
+
+- Shaun McGrath ([@dipdapdop](https://github.com/dipdapdop))
+- Koosha Owji <koosha.owji@gmail.com>
+- renovate[bot] ([@renovate](https://github.com/apps/renovate))
+
 ## 1.3.0
 
 [compare changes](https://github.com/kinde-oss/webhook/compare/1.2.0...1.3.0)

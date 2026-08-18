@@ -1,5 +1,29 @@
 # Changelog
 
+## 1.3.2
+
+[compare changes](https://github.com/kinde-oss/webhook/compare/1.3.1...1.3.2)
+
+### 🩹 Fixes
+
+- **deps:** Update dependency @kinde/jwt-validator to v0.4.4 ([690d648](https://github.com/kinde-oss/webhook/commit/690d648))
+
+### 🏡 Chore
+
+- **deps:** Update dependency @kinde/jwt-decoder to v0.2.4 ([6068013](https://github.com/kinde-oss/webhook/commit/6068013))
+- **deps:** Update dependency vite to v8.2.1 ([311ccaa](https://github.com/kinde-oss/webhook/commit/311ccaa))
+- **deps:** Update vitest monorepo to v4.1.10 ([85b4cd5](https://github.com/kinde-oss/webhook/commit/85b4cd5))
+- **deps:** Update dependency prettier to v3.9.6 ([725ac1b](https://github.com/kinde-oss/webhook/commit/725ac1b))
+- **deps:** Update dependency @types/node to v24.13.3 ([bb9f42f](https://github.com/kinde-oss/webhook/commit/bb9f42f))
+- **deps:** Update pnpm to v11.19.0 ([4b52524](https://github.com/kinde-oss/webhook/commit/4b52524))
+- **deps:** Update actions/setup-node action to v7 ([d04517d](https://github.com/kinde-oss/webhook/commit/d04517d))
+- Standardize Renovate config with release-age cooldown ([efe5b61](https://github.com/kinde-oss/webhook/commit/efe5b61))
+
+### ❤️ Contributors
+
+- Shafal Adhikari <adhikarishafal0@gmail.com>
+- Koosha Owji <koosha.owji@gmail.com>
+- renovate[bot] ([@renovate](https://github.com/apps/renovate))
 
 ## 1.3.1
 

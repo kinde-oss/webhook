@@ -24,12 +24,12 @@
   "types": "dist/main.d.ts",
   "devDependencies": {
     "@types/node": "^24.0.0",
-    "@vitest/coverage-v8": "^4.0.0",
+    "@vitest/coverage-v8": "^5.0.0",
     "prettier": "^3.2.5",
     "typescript": "^6.0.0",
     "vite": "^8.0.0",
     "vite-plugin-dts": "^5.0.0",
-    "vitest": "^4.0.0"
+    "vitest": "^5.0.0"
   },
   "dependencies": {
     "@kinde/jwt-decoder": "^0.2.0",

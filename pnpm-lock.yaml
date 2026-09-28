@@ -32,7 +32,7 @@ importers:
         version: 8.2.1(@types/node@24.13.5)
       vite-plugin-dts:
         specifier: ^5.0.0
-        version: 5.1.0(rolldown@1.2.4)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.2.1(@types/node@24.13.5))
+        version: 5.1.1(rolldown@1.2.4)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.2.1(@types/node@24.13.5))
       vitest:
         specifier: ^4.0.0
         version: 4.1.11(@types/node@24.13.5)(@vitest/coverage-v8@4.1.11)(vite@8.2.1(@types/node@24.13.5))
@@ -548,8 +548,8 @@ packages:
   undici-types@7.18.2:
     resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
 
-  unplugin-dts@1.1.0:
-    resolution: {integrity: sha512-KZJ+qk+lmd9dJY/PJvDRFL9BUtVubKDiX7Ai/X6mlkCArcQNzwmupKjVqHbRA42uqO5ZfFRFc+o8/OCbQ1GonQ==}
+  unplugin-dts@1.1.1:
+    resolution: {integrity: sha512-Z2VcabC0hjYuzF62oWmZXVoxagkM8bUWgqUy+dotoJTPnooR5mNaxbpv63JCmcaxdGCW2Bb75omK6FOryOYCRg==}
     peerDependencies:
       '@microsoft/api-extractor': '>=7'
       '@rspack/core': ^1
@@ -582,8 +582,8 @@ packages:
     resolution: {integrity: sha512-5uKD0nqiYVzlmCRs01Fhs2BdkEgBS3SAVP6ndrBsuK42iC2+JHyxM05Rm9G8+5mkmRtzMZGY8Ct5+mliZxU/Ww==}
     engines: {node: '>=18.12.0'}
 
-  vite-plugin-dts@5.1.0:
-    resolution: {integrity: sha512-MfLc2G+mXPUDGGxpHQeYbdunavFP9UpT9yxiAsTgUXRxfEd3HqysSAM4E72jhz5eIz3OOexCHkqiVlQq8ok9/A==}
+  vite-plugin-dts@5.1.1:
+    resolution: {integrity: sha512-U5dyX3DPFvHB+gaJIULn90kKGsXNYllyJ3vn491Y+LGu2nL5Fb8z7YgurN/Pi6ZFlnGljh2wSM0ZbFogSh4yAg==}
     peerDependencies:
       '@microsoft/api-extractor': '>=7'
       rollup: '>=3'
@@ -1107,7 +1107,7 @@ snapshots:
 
   undici-types@7.18.2: {}
 
-  unplugin-dts@1.1.0(rolldown@1.2.4)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.2.1(@types/node@24.13.5)):
+  unplugin-dts@1.1.1(rolldown@1.2.4)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.2.1(@types/node@24.13.5)):
     dependencies:
       '@rollup/pluginutils': 5.4.0
       '@volar/typescript': 2.4.28(typescript@6.0.3)
@@ -1132,9 +1132,9 @@ snapshots:
       picomatch: 4.0.7
       webpack-virtual-modules: 0.6.2
 
-  vite-plugin-dts@5.1.0(rolldown@1.2.4)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.2.1(@types/node@24.13.5)):
+  vite-plugin-dts@5.1.1(rolldown@1.2.4)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.2.1(@types/node@24.13.5)):
     dependencies:
-      unplugin-dts: 1.1.0(rolldown@1.2.4)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.2.1(@types/node@24.13.5))
+      unplugin-dts: 1.1.1(rolldown@1.2.4)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.2.1(@types/node@24.13.5))
     optionalDependencies:
       vite: 8.2.1(@types/node@24.13.5)
     transitivePeerDependencies:

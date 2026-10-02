@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.2...main
+
+[compare changes](https://github.com/kinde-oss/webhook/compare/1.3.2...main)
+
+### 🩹 Fixes
+
+- **deps:** Update dependency @kinde/jwt-validator to v0.4.5 ([4bf66be](https://github.com/kinde-oss/webhook/commit/4bf66be))
+
 ## 1.3.2
 
 [compare changes](https://github.com/kinde-oss/webhook/compare/1.3.1...1.3.2)

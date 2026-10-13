@@ -35,5 +35,5 @@
     "@kinde/jwt-decoder": "^0.2.0",
     "@kinde/jwt-validator": "0.4.5"
   },
-  "packageManager": "pnpm@12.9.0+sha512.8f64efa0b792986ca98ae568791bcd7722807e274c4f0c1d9853c62116495c584119db98762a2a5343b1684d361b9ae26fdd16d551666d7635346d3fae830ddd"
+  "packageManager": "pnpm@12.10.1+sha512.ba40a37eb1a370d60fea8c4cf1d364c13bcccef518e98ad2bcee954f539d38da37458e58261a3fa55e06523450ea0ffff9f497b135be41f2c15c1642bacace6c"
 }
